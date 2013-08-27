@@ -11,9 +11,6 @@ Brunch starter project that uses ember, javascript, compass, and zurb foundation
 ## Install express in your project directory
 * `sudo npm install express`
 
-## Install Compass and Zurb Foundation for Styles
-* Install compass: `gem install compass`
-* Install zurb-foundation: `gem install zurb-foundation`
 
 ## Install Brunch
 * Install brunch.io: `npm install -g brunch`
@@ -21,7 +18,7 @@ Brunch starter project that uses ember, javascript, compass, and zurb foundation
 
 ## New Brunch Project
 * Navigate to the directory where you want to create your project
-* `brunch new https://github.com/bradleytrager/EmberSkeleton.git [project name]`
+* `brunch new https://github.com/bradleytrager/Bootstrap3Brunch.git [project name]`
 * `cd [project name]`
 * `brunch build`
 * `brunch watch --server`
