@@ -1,0 +1,7 @@
+<h2>Photos</h2>
+
+<ul id="photos" class="large-block-grid-3">
+  {{#each model}}
+  <li><img {{bindAttr src="src"}} /></li>
+  {{/each}}
+</ul>

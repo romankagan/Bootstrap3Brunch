@@ -1,0 +1,29 @@
+<div class="row">
+	<div class="large-12 colums"><nav class="top-bar" style="">
+			<ul class="title-area">
+				<!-- Title Area -->
+				<li class="name">
+					<h1>
+						<a href="http://www.zurb.com/expo">
+							Ember Digest
+						</a>
+					</h1>
+				</li>
+				<li class="toggle-topbar"><a href="#"></a></li>
+			</ul>
+			<section class="top-bar-section">
+				<!-- Right Nav Section -->
+				<ul class="right">
+					<li>{{#linkTo "articles"}}Articles{{/linkTo}}</li>
+					<li>{{#linkTo "photos"}}Photos{{/linkTo}}</li>
+					{{#if isLoggedIn}}
+					<li><a href="#" {{ action "logout" }}>Logout</a></li>
+					{{else}}
+					<li>{{#linkTo "login"}}Login{{/linkTo}}</li>
+					{{/if}}
+				</ul>
+			</section>
+		</nav>
+		{{outlet}}
+	</div>
+</div>

@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="large-6 large-centered columns">
+		<h2> Login </h2>
+		{{#if loggedIn}}
+		<p>You are already logged in!</p>
+		{{else}}
+		<form class="form-horizontal" {{action "login" on="submit"}}>
+			{{#if loginFailed}}
+			<div data-alert class="alert-box">
+				Invalid username or password.
+				<a href="#" class="close">&times;</a>
+			</div>
+			{{/if}}
+
+			{{#if isSlowConnection}}
+			<div data-alert class="alert-box">
+				The request seems to be taking more time than usual, please wait.
+				<a href="#" class="close">&times;</a>
+			</div>
+			{{/if}}
+			<div class="row">
+				<div class="large-12 columns">
+					<label>Username</label>
+					{{input value=username type="text" placeholder="Username"}}
+				</div>
+				<div class="large-12 columns">
+					<label>Password</label>
+					{{input value=password type="password" placeholder="Password"}}
+				</div>
+				<div class="large-12 columns">
+					<label>Confirm Password</label>
+					{{input value=confirmPassword type="password" placeholder="Password"}}
+				</div>
+				<div class="large-12 columns">
+				</br>
+				{{input class="small button" type="submit" value="Log In"}} or {{#linkTo "register" }}Register{{/linkTo}}
+			</div>
+		</div>
+	</form>
+	
+	{{#if errorMessage}}
+	<div class="large-12 columns alert-box alert">{{errorMessage}}</div>
+	{{/if}}
+	{{/if}}
+</div>
+</div>
