@@ -34,6 +34,9 @@ module.exports = App.LoginController = Ember.ObjectController.extend({
 		$.post('http://localhost:3000/auth.json', data).then(function(response) {
 
 			self.set('errorMessage', response.message);
+			setTimeout(function(){
+				$(".alert").addClass("fade");
+			}, 2000);
 			if (response.success) {
 				alert('Login succeeded!');
 				self.set('token', response.token);

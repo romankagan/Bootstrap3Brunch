@@ -1,7 +1,12 @@
 <h2>Photos</h2>
-
-<ul id="photos" class="large-block-grid-3">
-  {{#each model}}
-  <li><img {{bindAttr src="src"}} /></li>
-  {{/each}}
-</ul>
+<div class="row">
+	<div id="photos" class="col-md-12 thumbnails">
+		{{#each model}}
+		<div class="col-md-4">
+			<div class="img-thumbnail">
+				<img {{bindAttr src="src"}} style="width:100%; height:auto;"/>
+			</div>
+		</div>
+		{{/each}}
+	</ul>
+</div>
