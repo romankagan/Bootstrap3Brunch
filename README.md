@@ -11,7 +11,6 @@ Brunch starter project that uses ember, javascript, compass, and zurb foundation
 ## Install express in your project directory
 * `sudo npm install express`
 
-
 ## Install Brunch
 * Install brunch.io: `npm install -g brunch`
 * If you have a permission denied error use `sudo npm install -g brunch`
@@ -24,6 +23,3 @@ Brunch starter project that uses ember, javascript, compass, and zurb foundation
 * `brunch watch --server`
 * In another console tab run `node server.js` for the mock authentication server
 * By the way username="ember" password="casts"
-
-
-
