@@ -23,3 +23,5 @@ Brunch starter project that uses ember, javascript, compass, and zurb foundation
 * `brunch watch --server`
 * In another console tab run `node server.js` for the mock authentication server
 * By the way username="ember" password="casts"
+
+** Hi there
